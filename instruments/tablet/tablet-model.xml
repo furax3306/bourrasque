@@ -168,6 +168,73 @@ description :
 
   <!-- ~~~~~~~~~~~~~~~~~~ effects -->
   <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>tablet.zone_menu</object-name>
+    <object-name>tablet.zone_prev</object-name>
+    <object-name>tablet.zone_next</object-name>
+    <object-name>tablet.zone_minus</object-name>
+    <object-name>tablet.zone_plus</object-name>
+
+    <object-name>tablet.zone.L1C1</object-name>
+    <object-name>tablet.zone.L1C2</object-name>
+    <object-name>tablet.zone.L1C3</object-name>
+    <object-name>tablet.zone.L1C4</object-name>
+    <object-name>tablet.zone.L1C5</object-name>
+    <object-name>tablet.zone.L1C6</object-name>
+    <object-name>tablet.zone.L1C7</object-name>
+    <object-name>tablet.zone.L2C1</object-name>
+    <object-name>tablet.zone.L2C2</object-name>
+    <object-name>tablet.zone.L2C3</object-name>
+    <object-name>tablet.zone.L2C4</object-name>
+    <object-name>tablet.zone.L2C5</object-name>
+    <object-name>tablet.zone.L2C6</object-name>
+    <object-name>tablet.zone.L2C7</object-name>
+    <object-name>tablet.zone.L3C1</object-name>
+    <object-name>tablet.zone.L3C2</object-name>
+    <object-name>tablet.zone.L3C3</object-name>
+    <object-name>tablet.zone.L3C4</object-name>
+    <object-name>tablet.zone.L3C5</object-name>
+    <object-name>tablet.zone.L3C6</object-name>
+    <object-name>tablet.zone.L3C7</object-name>
+    <object-name>tablet.zone.L4C1</object-name>
+    <object-name>tablet.zone.L4C2</object-name>
+    <object-name>tablet.zone.L4C3</object-name>
+    <object-name>tablet.zone.L4C4</object-name>
+    <object-name>tablet.zone.L4C5</object-name>
+    <object-name>tablet.zone.L4C6</object-name>
+    <object-name>tablet.zone.L4C7</object-name>
+    <object-name>tablet.zone.L5C1</object-name>
+    <object-name>tablet.zone.L5C2</object-name>
+    <object-name>tablet.zone.L5C3</object-name>
+    <object-name>tablet.zone.L5C4</object-name>
+    <object-name>tablet.zone.L5C5</object-name>
+    <object-name>tablet.zone.L5C6</object-name>
+    <object-name>tablet.zone.L5C7</object-name>
+    <object-name>tablet.zone.L6C1</object-name>
+    <object-name>tablet.zone.L6C2</object-name>
+    <object-name>tablet.zone.L6C3</object-name>
+    <object-name>tablet.zone.L6C4</object-name>
+    <object-name>tablet.zone.L6C5</object-name>
+    <object-name>tablet.zone.L6C6</object-name>
+    <object-name>tablet.zone.L6C7</object-name>
+    <object-name>tablet.zone.L7C1</object-name>
+    <object-name>tablet.zone.L7C2</object-name>
+    <object-name>tablet.zone.L7C3</object-name>
+    <object-name>tablet.zone.L7C4</object-name>
+    <object-name>tablet.zone.L7C5</object-name>
+    <object-name>tablet.zone.L7C6</object-name>
+    <object-name>tablet.zone.L7C7</object-name>
+    <object-name>tablet.zone.L8C1</object-name>
+    <object-name>tablet.zone.L8C2</object-name>
+    <object-name>tablet.zone.L8C3</object-name>
+    <object-name>tablet.zone.L8C4</object-name>
+    <object-name>tablet.zone.L8C5</object-name>
+    <object-name>tablet.zone.L8C6</object-name>
+    <object-name>tablet.zone.L8C7</object-name>
+  </effect>
+
+
+  <effect>
     <inherits-from>Aircraft/bourrasque/models/effects/interior/interior-flashlight</inherits-from>
     <object-name>tablet.box</object-name>
     <object-name>tablet.screen</object-name>

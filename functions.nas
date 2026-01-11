@@ -263,7 +263,6 @@ var throttle_mouse = func()
 
 var inc_throttle = func()
 {
-
     var lock_speed = getprop("/autopilot/locks/speed") or '';
     if(lock_speed)
     {

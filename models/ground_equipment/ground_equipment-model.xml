@@ -35,6 +35,7 @@ changelog
     <object-name>extincteur</object-name>
     <object-name>cone</object-name>
   </animation>
+
   <effect>
     <inherits-from>Aircraft/bourrasque/models/effects/aircraft/aircraft</inherits-from>
     <object-name>ground_equipment.engine</object-name>

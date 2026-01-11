@@ -30,7 +30,6 @@
     <object-name>piedG</object-name>
   </animation>
 
-  <!-- ~~~~~~~~~~~~~~~~~~ effects -->
   <effect>
     <inherits-from>Aircraft/bourrasque/models/effects/interior/interior-flashlight</inherits-from>
     <object-name>tete</object-name>

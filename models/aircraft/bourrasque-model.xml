@@ -136,6 +136,7 @@ changelog
     <object-name>pare_brise</object-name>
     <object-name>canopy_plexi</object-name>
   </effect>
+
   <effect>
     <inherits-from>Aircraft/bourrasque/models/effects/aircraft/aircraft</inherits-from>
     <object-name>fuselage</object-name>

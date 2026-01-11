@@ -64,6 +64,7 @@ changelog
     <inherits-from>Aircraft/bourrasque/models/effects/aircraft/mirror</inherits-from>
     <object-name>projecteur_train_mirroir</object-name>
   </effect>
+
   <effect>
     <inherits-from>Aircraft/bourrasque/models/effects/aircraft/aircraft</inherits-from>
     <object-name>verin_jambe_train</object-name>
@@ -434,7 +435,7 @@ ________________________________________________________________________________
       <product>
         <property>systems/electrical/bus/commands</property>
         <property>sim/multiplay/generic/float[7]</property>
-        <value>-45</value>
+        <value>-80</value>
       </product>
     </expression>
     <center>
@@ -455,7 +456,7 @@ ________________________________________________________________________________
       <product>
         <property>systems/electrical/bus/commands</property>
         <property>sim/multiplay/generic/float[7]</property>
-        <value>-45</value>
+        <value>-80</value>
       </product>
     </expression>
     <center>
@@ -464,9 +465,9 @@ ________________________________________________________________________________
       <z-m>-0.941</z-m>
     </center>
     <axis>
-      <x>0.023</x>
+      <x>0.016</x>
       <y>0</y>
-      <z>0.117</z>
+      <z>0.12</z>
     </axis>
   </animation>
 

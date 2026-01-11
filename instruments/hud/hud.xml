@@ -14,6 +14,7 @@ see :
 <PropertyList>
 
   <enable3d>true</enable3d>
+
 <!--
 ================================================================================
                                                                           LADDER
@@ -33,7 +34,7 @@ see :
     <pitch-input>
       <property>/orientation/pitch-deg</property>
     </pitch-input>
-    <compression-factor>10</compression-factor>
+    <compression-factor>11</compression-factor>
     <display-span>25</display-span>
     <divisions>5.0</divisions>
     <screen-hole>6</screen-hole>
@@ -79,7 +80,7 @@ see :
     <pitch-input>
       <property>/orientation/pitch-deg</property>
     </pitch-input>
-    <compression-factor>10</compression-factor>
+    <compression-factor>11</compression-factor>
     <display-span>15</display-span>
     <divisions>5.0</divisions>
     <screen-hole>0</screen-hole>
@@ -125,7 +126,7 @@ see :
     <pitch-input>
       <property>/orientation/pitch-deg</property>
     </pitch-input>
-    <compression-factor>10</compression-factor>
+    <compression-factor>11</compression-factor>
     <display-span>25</display-span>
     <divisions>3.0</divisions>
     <screen-hole>8</screen-hole>
@@ -459,10 +460,16 @@ see :
     <condition>
       <or>
         <property>/_debug/instruments/hud_show_all</property>
-        <equals>
-          <property>/instrumentation/my_aircraft/nd/controls/mode</property>
-          <value>NAV</value>
-        </equals>
+        <and>
+          <equals>
+            <property>/instrumentation/my_aircraft/nd/controls/mode</property>
+            <value>NAV</value>
+          </equals>
+          <equals>
+            <property>/systems/refuel/contact</property>
+            <value>0</value>
+          </equals>
+        </and>
       </or>
     </condition>
   </tape>
@@ -1606,6 +1613,66 @@ see :
     </condition>
   </gauge>
 
+<!-- ~~~~~~~~~~~~~~~~~~ aar help -->
+  <gauge>
+    <name>vs-aar</name>
+    <x>30</x>
+    <y>-50</y>
+    <width>10</width>
+    <height>80</height>
+    <option>vertical</option>
+    <option>left</option>
+    <option>notext</option>
+    <major-divisions>50</major-divisions>
+    <input>
+      <property>/autopilot/internal/vert-speed-fpm</property>
+      <max>100.0</max>
+      <min>-100.0</min>
+    </input>
+    <condition>
+      <or>
+        <property>/_debug/instruments/hud_show_all</property>
+        <and>
+          <equals>
+            <property>/instrumentation/my_aircraft/nd/controls/mode</property>
+            <value>NAV</value>
+          </equals>
+          <property>/systems/refuel/contact</property>
+        </and>
+      </or>
+    </condition>
+  </gauge>
+  <gauge>
+    <name>bank-aar</name>
+    <x>-60</x>
+    <y>-5</y>
+    <width>120</width>
+    <height>10</height>
+    <option>horizontal</option>
+    <option>bottom</option>
+    <option>notext</option>
+    <major-divisions>10</major-divisions>
+    <minor-divisions>2</minor-divisions>
+    <input>
+      <property>/orientation/roll-deg</property>
+      <factor>1</factor>
+      <max>30.0</max>
+      <min>-30.0</min>
+    </input>
+    <condition>
+      <or>
+        <property>/_debug/instruments/hud_show_all</property>
+        <and>
+          <equals>
+            <property>/instrumentation/my_aircraft/nd/controls/mode</property>
+            <value>NAV</value>
+          </equals>
+          <property>/systems/refuel/contact</property>
+        </and>
+      </or>
+    </condition>
+  </gauge>
+
 <!--
 ================================================================================
                                                                AVIONICS WARNINGS
@@ -1863,12 +1930,10 @@ see :
             <property>/instrumentation/my_aircraft/stdby-hsi/controls/nav-selector</property>
             <value type="int">1</value>
           </equals>
-          <not>
-            <equals>
-              <property>/instrumentation/my_aircraft/nd/inputs/lh-vor-adf</property>
-              <value>-1</value>
-            </equals>
-          </not>
+          <equals>
+            <property>/instrumentation/my_aircraft/nd/inputs/lh-vor-adf</property>
+            <value>1</value>
+          </equals>
           <property>/instrumentation/nav[0]/serviceable</property>
           <not><property>/instrumentation/nav[0]/slaved-to-gps</property></not>
         </and>
@@ -1904,12 +1969,10 @@ see :
             <property>/instrumentation/my_aircraft/stdby-hsi/controls/nav-selector</property>
             <value type="int">1</value>
           </equals>
-          <not>
-            <equals>
-              <property>/instrumentation/my_aircraft/nd/inputs/lh-vor-adf</property>
-              <value>-1</value>
-            </equals>
-          </not>
+          <equals>
+            <property>/instrumentation/my_aircraft/nd/inputs/lh-vor-adf</property>
+            <value>1</value>
+          </equals>
           <property>/instrumentation/nav[0]/serviceable</property>
           <not><property>/instrumentation/nav[0]/slaved-to-gps</property></not>
         </and>
@@ -1945,12 +2008,10 @@ see :
             <property>/instrumentation/my_aircraft/stdby-hsi/controls/nav-selector</property>
             <value type="int">1</value>
           </equals>
-          <not>
-            <equals>
-              <property>/instrumentation/my_aircraft/nd/inputs/lh-vor-adf</property>
-              <value>-1</value>
-            </equals>
-          </not>
+          <equals>
+            <property>/instrumentation/my_aircraft/nd/inputs/lh-vor-adf</property>
+            <value>1</value>
+          </equals>
           <property>/instrumentation/nav[0]/serviceable</property>
           <not><property>/instrumentation/nav[0]/slaved-to-gps</property></not>
         </and>
@@ -1986,12 +2047,10 @@ see :
             <property>/instrumentation/my_aircraft/stdby-hsi/controls/nav-selector</property>
             <value type="int">1</value>
           </equals>
-          <not>
-            <equals>
-              <property>/instrumentation/my_aircraft/nd/inputs/lh-vor-adf</property>
-              <value>-1</value>
-            </equals>
-          </not>
+          <equals>
+            <property>/instrumentation/my_aircraft/nd/inputs/lh-vor-adf</property>
+            <value>1</value>
+          </equals>
           <property>/instrumentation/nav[0]/serviceable</property>
           <not><property>/instrumentation/nav[0]/slaved-to-gps</property></not>
         </and>
@@ -2027,12 +2086,10 @@ see :
             <property>/instrumentation/my_aircraft/stdby-hsi/controls/nav-selector</property>
             <value type="int">1</value>
           </equals>
-          <not>
-            <equals>
-              <property>/instrumentation/my_aircraft/nd/inputs/lh-vor-adf</property>
-              <value>-1</value>
-            </equals>
-          </not>
+          <equals>
+            <property>/instrumentation/my_aircraft/nd/inputs/lh-vor-adf</property>
+            <value>1</value>
+          </equals>
           <property>/instrumentation/nav[0]/serviceable</property>
           <not><property>/instrumentation/nav[0]/slaved-to-gps</property></not>
         </and>
@@ -2151,12 +2208,10 @@ see :
             <property>/instrumentation/my_aircraft/stdby-hsi/controls/nav-selector</property>
             <value type="int">2</value>
           </equals>
-          <not>
-            <equals>
-              <property>/instrumentation/my_aircraft/nd/inputs/rh-vor-adf</property>
-              <value>-1</value>
-            </equals>
-          </not>
+          <equals>
+            <property>/instrumentation/my_aircraft/nd/inputs/rh-vor-adf</property>
+            <value>1</value>
+          </equals>
           <property>/instrumentation/nav[1]/serviceable</property>
         </and>
       </or>
@@ -2191,12 +2246,10 @@ see :
             <property>/instrumentation/my_aircraft/stdby-hsi/controls/nav-selector</property>
             <value type="int">2</value>
           </equals>
-          <not>
-            <equals>
-              <property>/instrumentation/my_aircraft/nd/inputs/rh-vor-adf</property>
-              <value>-1</value>
-            </equals>
-          </not>
+          <equals>
+            <property>/instrumentation/my_aircraft/nd/inputs/rh-vor-adf</property>
+            <value>1</value>
+          </equals>
           <property>/instrumentation/nav[1]/serviceable</property>
         </and>
       </or>
@@ -2231,12 +2284,10 @@ see :
             <property>/instrumentation/my_aircraft/stdby-hsi/controls/nav-selector</property>
             <value type="int">2</value>
           </equals>
-          <not>
-            <equals>
-              <property>/instrumentation/my_aircraft/nd/inputs/rh-vor-adf</property>
-              <value>-1</value>
-            </equals>
-          </not>
+          <equals>
+            <property>/instrumentation/my_aircraft/nd/inputs/rh-vor-adf</property>
+            <value>1</value>
+          </equals>
           <property>/instrumentation/nav[1]/serviceable</property>
         </and>
       </or>
@@ -2271,12 +2322,10 @@ see :
             <property>/instrumentation/my_aircraft/stdby-hsi/controls/nav-selector</property>
             <value type="int">2</value>
           </equals>
-          <not>
-            <equals>
-              <property>/instrumentation/my_aircraft/nd/inputs/rh-vor-adf</property>
-              <value>-1</value>
-            </equals>
-          </not>
+          <equals>
+            <property>/instrumentation/my_aircraft/nd/inputs/rh-vor-adf</property>
+            <value>1</value>
+          </equals>
           <property>/instrumentation/nav[1]/serviceable</property>
         </and>
       </or>
@@ -2311,12 +2360,10 @@ see :
             <property>/instrumentation/my_aircraft/stdby-hsi/controls/nav-selector</property>
             <value type="int">2</value>
           </equals>
-          <not>
-            <equals>
-              <property>/instrumentation/my_aircraft/nd/inputs/rh-vor-adf</property>
-              <value>-1</value>
-            </equals>
-          </not>
+          <equals>
+            <property>/instrumentation/my_aircraft/nd/inputs/rh-vor-adf</property>
+            <value>1</value>
+          </equals>
           <property>/instrumentation/nav[1]/serviceable</property>
         </and>
       </or>

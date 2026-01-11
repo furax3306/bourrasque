@@ -906,7 +906,7 @@ my_aircraft_functions.inc_aileron(0.05, 1);
         <command>nasal</command>
         <script>
           <![CDATA[
-my_aircraft_functions.inc_throttle(0.01, 1);
+my_aircraft_functions.inc_throttle(0.01, 0.5);
           ]]>
         </script>
       </binding>
@@ -920,7 +920,7 @@ my_aircraft_functions.inc_throttle(0.01, 1);
         <command>nasal</command>
         <script>
           <![CDATA[
-my_aircraft_functions.inc_throttle(-0.01, -1);
+my_aircraft_functions.inc_throttle(-0.01, -0.5);
           ]]>
         </script>
       </binding>
@@ -933,7 +933,7 @@ my_aircraft_functions.inc_throttle(-0.01, -1);
         <command>nasal</command>
         <script>
           <![CDATA[
-my_aircraft_functions.inc_throttle(-0.01, -1);
+my_aircraft_functions.inc_throttle(-0.01, -0.5);
           ]]>
         </script>
       </binding>
@@ -1076,7 +1076,7 @@ ________________________________________________________________________________
           <command>nasal</command>
           <script>
             <![CDATA[
-my_aircraft_functions.inc_throttle(0.01, 1);
+my_aircraft_functions.inc_throttle(0.01, 0.5);
             ]]>
           </script>
           <offset>0</offset>
@@ -1090,7 +1090,7 @@ my_aircraft_functions.inc_throttle(0.01, 1);
           <command>nasal</command>
           <script>
             <![CDATA[
-my_aircraft_functions.inc_throttle(-0.01, -1);
+my_aircraft_functions.inc_throttle(-0.01, -0.5);
             ]]>
           </script>
           <offset>0</offset>

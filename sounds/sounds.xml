@@ -413,11 +413,12 @@ ________________________________________________________________________________
       </condition>
       <volume>
         <property>/instrumentation/airspeed-indicator/true-speed-kt</property>
-        <factor>.0004</factor>
+        <factor>.005</factor>
+        <max>0.15</max>
       </volume>
       <pitch>
         <property>/instrumentation/airspeed-indicator/true-speed-kt</property>
-        <factor>.0003</factor>
+        <factor>.002</factor>
       </pitch>
     </rumble_gear_internal>
 

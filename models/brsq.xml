@@ -453,6 +453,26 @@ livery_update.stop();
     </condition>
   </model>
 
+  <animation>
+    <object-name>left reheat outside orange</object-name>
+    <object-name>left reheat outside blue</object-name>
+    <object-name>left reheat outside white</object-name>
+    <type>rotate</type>
+    <expression>
+      <value>2</value>
+    </expression>
+    <center>
+      <x-m>6.1</x-m>
+      <y-m>-.52</y-m>
+      <z-m>.32</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
   <model>
     <name>right reheat inside</name>
     <path>Aircraft/bourrasque/models/effects/reheat/reheat_inside1.xml</path>
@@ -514,6 +534,26 @@ livery_update.stop();
       <property>/sim/rendering/shaders/skydome</property>
     </condition>
   </model>
+
+  <animation>
+    <object-name>right reheat outside orange</object-name>
+    <object-name>right reheat outside blue</object-name>
+    <object-name>right reheat outside white</object-name>
+    <type>rotate</type>
+    <expression>
+      <value>-2</value>
+    </expression>
+    <center>
+      <x-m>6.1</x-m>
+      <y-m>.52</y-m>
+      <z-m>.32</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
 
   <!-- ~~~~~~~~~~~~~~~~~~ als 3d exterior shadow (hide if backseat or MP) -->
 <!--

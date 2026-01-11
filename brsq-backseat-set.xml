@@ -42,6 +42,7 @@ http://wiki.flightgear.org/Property_tree
         <email>nico@localhost</email>
       </maintainer>
     </maintainers>
+
     <primary-set type="bool">true</primary-set>
     <urls>
       <home-page>https://hardba11.github.io/bourrasque/</home-page>
@@ -83,7 +84,7 @@ http://wiki.flightgear.org/Property_tree
     </tags>
 
     <rating>
-      <FDM type="int">2</FDM>
+      <FDM type="int">3</FDM>
       <systems type="int">2</systems>
       <cockpit type="int">4</cockpit>
       <model type="int">4</model>
@@ -126,9 +127,9 @@ http://wiki.flightgear.org/Property_tree
       <constant type="int">1</constant>
 
       <rendering>
-        <relative-navlight-luminosity type="float">0</relative-navlight-luminosity>
-        <relative-strobelight-luminosity type="float">0</relative-strobelight-luminosity>
-        <relative-taxilight-luminosity type="float">0</relative-taxilight-luminosity>
+        <relative-navlight-luminosity type="float">.5</relative-navlight-luminosity>
+        <relative-strobelight-luminosity type="float">.5</relative-strobelight-luminosity>
+        <relative-taxilight-luminosity type="float">.5</relative-taxilight-luminosity>
       </rendering>
 
       <livery>
@@ -253,6 +254,12 @@ http://wiki.flightgear.org/Property_tree
     <gear-agl-ft type="float">0</gear-agl-ft>
   </position>
 
+  <surface-positions>
+    <out-left-aileron-pos-norm type="float">0</out-left-aileron-pos-norm>
+    <out-right-aileron-pos-norm type="float">0</out-right-aileron-pos-norm>
+    <out-elevator-pos-norm type="float">0</out-elevator-pos-norm>
+  </surface-positions>
+
   <!-- tyre smoke and squeal when touchdown, data updated by bourrasque.nas -->
   <gear>
     <gear n="0">
@@ -265,9 +272,6 @@ http://wiki.flightgear.org/Property_tree
       <tyre-touchdown type="bool">0</tyre-touchdown>
     </gear>
   </gear>
-
-  <!-- ~~~~~~~~~~~~~~~~~~ AI -->
-  <ai include="include/ai-properties.xml" />
 
   <!--
 ================================================================================

@@ -15,11 +15,16 @@
   <animation>
     <object-name>fieldOfView</object-name>
   </animation>
-
   <animation>
     <type>noshadow</type>
     <object-name>fieldOfView</object-name>
   </animation>
+
+  <!-- ~~~~~~~~~~~~~~~~~~ effects -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>fieldOfView</object-name>
+  </effect>
 
   <!-- ~~~~~~~~~~~~~~~~~~ hidden -->
   <animation>

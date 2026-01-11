@@ -216,6 +216,7 @@ vitesse affichee sur le hud
             <entry><ind>1.00</ind><dep>0.005</dep></entry>
             <entry><ind>1.50</ind><dep>0.002</dep></entry>
             <entry><ind>2.00</ind><dep>0.001</dep></entry>
+            <entry><ind>30.00</ind><dep>0.00001</dep></entry>
           </table>
         </expression>
       </Kp>
@@ -230,6 +231,7 @@ vitesse affichee sur le hud
             <entry><ind>1.00</ind><dep>.08</dep></entry>
             <entry><ind>1.50</ind><dep>.08</dep></entry>
             <entry><ind>2.00</ind><dep>.08</dep></entry>
+            <entry><ind>30.00</ind><dep>.0002</dep></entry>
           </table>
         </expression>
       </Ti>
@@ -244,6 +246,7 @@ vitesse affichee sur le hud
             <entry><ind>1.00</ind><dep>0.01</dep></entry>
             <entry><ind>1.50</ind><dep>0.01</dep></entry>
             <entry><ind>2.00</ind><dep>0.01</dep></entry>
+            <entry><ind>30.00</ind><dep>0.001</dep></entry>
           </table>
         </expression>
       </Td>

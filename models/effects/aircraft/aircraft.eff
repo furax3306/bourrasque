@@ -3,6 +3,7 @@
 <PropertyList>
 
   <name>aircraft</name>
+  <!--inherits-from>Effects/model-pbr</inherits-from-->
   <inherits-from>Effects/model-combined-deferred</inherits-from>
 
   <parameters>

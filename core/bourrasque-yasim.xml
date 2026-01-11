@@ -198,8 +198,8 @@ ________________________________________________________________________________
   <jet
       x="-1.9" y="0.5" z="0.1"
       mass="1900"
-      thrust="18000"
-      afterburner="25000"
+      thrust="12000"
+      afterburner="20000"
       spool-time="3"
       exhaust-speed="2500"
       tsfc="0.2"
@@ -213,12 +213,17 @@ ________________________________________________________________________________
     <control-output control="REHEAT" prop="/engines/engine[0]/reheat" />
     <control-speed  control="REHEAT" transition-time="2" />
   </jet>
+  <thruster thrust="2000"
+      x="-6" y="0.5" z="0.2"
+      vx="1" vy="0" vz="0">
+    <control-input control="THROTTLE" axis="/controls/hack/engine[0]/throttle" />
+  </thruster>
 
   <!-- ~~~~~~~~~~~~~~~~~~ right engine -->
   <jet x="-1.9" y="-0.5" z=".1"
       mass="1900"
-      thrust="18000"
-      afterburner="25000"
+      thrust="12000"
+      afterburner="20000"
       spool-time="3"
       exhaust-speed="2500"
       tsfc="0.2"
@@ -232,6 +237,11 @@ ________________________________________________________________________________
     <control-output control="REHEAT" prop="/engines/engine[1]/reheat" />
     <control-speed  control="REHEAT" transition-time="2" />
   </jet>
+  <thruster thrust="2000"
+      x="-6" y="-0.5" z="0.2"
+      vx="1" vy="0" vz="0">
+    <control-input control="THROTTLE" axis="/controls/hack/engine[1]/throttle" />
+  </thruster>
 
   <!-- ~~~~~~~~~~~~~~~~~~ thruster : boost + pushback -->
   <thruster thrust="180000"

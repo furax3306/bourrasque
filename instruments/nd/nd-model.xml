@@ -199,6 +199,54 @@ changelog
     </emission>
   </animation>
 
+  <!--animation>
+    <type>pbr</type>
+    <object-name>nd.screen</object-name>
+    <condition>
+      <greater-than>
+        <property>/controls/lighting/instruments-norm</property>
+        <value>0.1</value>
+      </greater-than>
+    </condition>
+    <base-color-factor>
+      <r>1</r>
+      <g>1</g>
+      <b>1</b>
+      <a>1.0</a>
+    </base-color-factor>
+    <metallic-factor>0.0</metallic-factor>
+    <roughness-factor>0.1</roughness-factor>
+    <emissive-factor>
+      <r><property>/controls/lighting/instruments-norm</property></r>
+      <g><property>/controls/lighting/instruments-norm</property></g>
+      <b><property>/controls/lighting/instruments-norm</property></b>
+    </emissive-factor>
+  </animation>
+  <animation>
+    <type>pbr</type>
+    <object-name>nd.screen</object-name>
+    <condition>
+      <equals>
+        <property>/controls/lighting/instruments-norm</property>
+        <value>0</value>
+      </equals>
+    </condition>
+    <base-color-factor>
+      <r>1</r>
+      <g>1</g>
+      <b>1</b>
+      <a>1.0</a>
+    </base-color-factor>
+    <metallic-factor>0.0</metallic-factor>
+    <roughness-factor>0.1</roughness-factor>
+    <emissive-factor>
+      <r>1</r>
+      <g>1</g>
+      <b>1</b>
+    </emissive-factor>
+  </animation-->
+
+
   <animation>
     <type>material</type>
     <object-name>cadre-emit</object-name>
@@ -243,6 +291,43 @@ changelog
       <property>systems/electrical/bus/avionics</property>
     </condition>
   </animation>
+
+  <!--animation>
+    <type>pbr</type>
+    <object-name>hud.app-emit</object-name>
+    <object-name>hud.nav-emit</object-name>
+    <object-name>hud.taxi-emit</object-name>
+    <object-name>hud.vfr-emit</object-name>
+    <object-name>hud.void1-emit</object-name>
+    <object-name>nd.adf1-emit</object-name>
+    <object-name>nd.adf2-emit</object-name>
+    <object-name>nd.app-emit</object-name>
+    <object-name>nd.info-emit</object-name>
+    <object-name>nd.map-emit</object-name>
+    <object-name>nd.pln-emit</object-name>
+    <object-name>nd.rdr-emit</object-name>
+    <object-name>nd.true_north-emit</object-name>
+    <object-name>nd.slave_gps-emit</object-name>
+    <object-name>nd.vor-emit</object-name>
+    <object-name>nd.vor1-emit</object-name>
+    <object-name>nd.vor2-emit</object-name>
+    <base-color-factor>
+      <r>.9</r>
+      <g>0</g>
+      <b>0</b>
+      <a>1.0</a>
+    </base-color-factor>
+    <metallic-factor>0.0</metallic-factor>
+    <roughness-factor>0.1</roughness-factor>
+    <emissive-factor>
+      <r>.05</r>
+      <g>0</g>
+      <b>0</b>
+    </emissive-factor>
+    <condition>
+      <property>systems/electrical/bus/avionics</property>
+    </condition>
+  </animation-->
 
   <!--
 ================================================================================

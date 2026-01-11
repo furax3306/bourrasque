@@ -2,6 +2,7 @@
 
 <PropertyList>
   <name>flashlight</name>
+  <!--inherits-from>Effects/model-pbr</inherits-from-->
   <inherits-from>Effects/model-interior</inherits-from>
 
   <parameters>

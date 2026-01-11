@@ -25,7 +25,7 @@ PROPERTY-PATH : /autopilot/
   <settings>
     <heading-bug-deg type="int">0</heading-bug-deg>
     <true-heading-deg type="int">0</true-heading-deg>
-    <target-speed-kt type="int">250</target-speed-kt>
+    <target-speed-kt type="double">250</target-speed-kt>
     <target-speed-mach type="double">0.40</target-speed-mach>
     <target-altitude-ft type="int">1500</target-altitude-ft>
     <vertical-speed-fpm type="int">6000</vertical-speed-fpm>

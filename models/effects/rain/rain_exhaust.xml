@@ -12,30 +12,32 @@
     <pass>true</pass>
 
     <condition>
-      <or>
-        <and>
-          <not><property>sim/multiplay/generic/float[10]</property></not>
-          <property>sim/multiplay/generic/float[12]</property>
-          <greater-than>
-            <property>/environment/rain-norm</property>
-            <value>0.1</value>
-          </greater-than>
-        </and>
-        <and>
-          <greater-than>
-            <property>/environment/rain-norm</property>
-            <value>0.1</value>
-          </greater-than>
-          <greater-than>
-            <property>position/altitude-agl-ft</property>
-            <value>6</value>
-          </greater-than>
-          <less-than>
-            <property>position/altitude-agl-ft</property>
-            <value>20</value>
-          </less-than>
-        </and>
-      </or>
+      <and>
+        <greater-than>
+          <property>/environment/rain-norm</property>
+          <value>0.1</value>
+        </greater-than>
+        <greater-than>
+          <property>sim/multiplay/generic/float[4]</property> <!-- /gear/gear[0]/rollspeed-ms -->
+          <value>10</value>
+        </greater-than>
+        <or>
+          <and>
+            <not><property>sim/multiplay/generic/float[10]</property></not>
+            <property>sim/multiplay/generic/float[12]</property>
+          </and>
+          <and>
+            <greater-than>
+              <property>position/altitude-agl-ft</property>
+              <value>6</value>
+            </greater-than>
+            <less-than>
+              <property>position/altitude-agl-ft</property>
+              <value>20</value>
+            </less-than>
+          </and>
+        </or>
+      </and>
     </condition>
 
     <attach>world</attach>
