@@ -342,10 +342,12 @@ http://wiki.flightgear.org/Property_tree
       <path>/instrumentation/my_aircraft/nd/inputs/inputs/tfc</path>
       <path>/instrumentation/my_aircraft/nd/inputs/true-north</path>
       <path>/instrumentation/my_aircraft/sfd/controls/radar_range</path>
+      
       <path>/consumables/fuel/tank[0]/level-norm</path>
       <path>/consumables/fuel/tank[1]/level-norm</path>
       <path>/consumables/fuel/tank[2]/level-norm</path>
       <path>/consumables/fuel/tank[3]/level-norm</path>
+      
       <path>/instrumentation/my_aircraft/stdby-alt/controls/std-alt</path>
       <path>/instrumentation/altimeter/setting-inhg</path>
       <path>/instrumentation/my_aircraft/stdby-alt/controls/setting-inhg-previous</path>
@@ -523,6 +525,22 @@ http://wiki.flightgear.org/Property_tree
       <file type="string">tools/copilot/copilot-brsq.nas</file>
     </tools-copilot>
 
+    <!--  **********************************************
+          ***  Adding fonction to call nasal script  ***
+          ***  to bind spoilers parameters to the    ***
+          ***  speedbrakes. This allow speedbrakes   ***
+          ***  command with spoiler (innefectives    ***
+          ***  on the 'bourrasque' and avoid use of  ***
+          ***  the 'k' and 'j' keys, using the       ***
+          ***  spoilers throttles command instead    ***
+          ********************************************** -->
+    
+	<spoiler4kaskouill-plane>
+		<file type="string">/core/brake4ever.nas</file>
+	</spoiler4kaskouill-plane>
+
+    <!--  *** End added function  ***  -->
+    
   </nasal>
 
 </PropertyList>
