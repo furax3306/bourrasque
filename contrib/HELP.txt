@@ -25,8 +25,8 @@ keyboard shortcuts
 - i : change hud color
 - I decrease hud brightness
 - y : start/stop chrono
-- [ : Catapult launch (carrier)
-- ] : Toggle Launch-bar (carrier)
+- e : Catapult launch (carrier)
+- E : Toggle Launch-bar (carrier)
 - ; : Toggle Hook (carrier)
 - NUMPAD : see below
 - tab : mouse mode : pointer, view, stick
