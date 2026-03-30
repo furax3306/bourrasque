@@ -288,7 +288,7 @@ my_aircraft_functions.event_toggle_jato(0);
     
     <!-- ~~~~~~~~~~~~~~~~~~ carrier -->
 	
-	<-- Keys modifications for internationals keyboards compatibility -->
+	<!-- Keys modifications for internationals keyboards compatibility -->
 	
 	<!--
     <key n="91">
