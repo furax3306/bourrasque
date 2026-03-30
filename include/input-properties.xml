@@ -285,9 +285,17 @@ my_aircraft_functions.event_toggle_jato(0);
       </binding>
     </key>
 
+    
     <!-- ~~~~~~~~~~~~~~~~~~ carrier -->
+	
+	<-- Keys modifications for internationals keyboards compatibility -->
+	
+	<!--
     <key n="91">
       <name>[</name>
+	-->	
+    <key n="101">
+      <name>e</name>
       <desc>toggle catapult launch</desc>
       <binding>
         <command>nasal</command>
@@ -298,8 +306,14 @@ my_aircraft_functions.event_launch();
         </script>
       </binding>
     </key>
+
+	<!--
     <key n="93">
       <name>]</name>
+	-->
+	
+    <key n="69">
+      <name>E</name>
       <desc>toggle launch-bar and reinit catapult</desc>
       <binding>
         <command>nasal</command>
@@ -310,6 +324,10 @@ my_aircraft_functions.event_toggle_launchbar(-1);
         </script>
       </binding>
     </key>
+	
+	<!-- End keys mods for internationals keyboards -->
+	
+
     <key n="59">
       <name>;</name>
       <desc>toggle hook</desc>
