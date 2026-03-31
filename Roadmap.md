@@ -27,6 +27,7 @@ Updated 30/03/26
   Instead use your throttles command to raise or retract speedbrakes
 
 - Keys for carrier catapult changed for international keyboard compatibility (] and [ to E and e)
+  
   For engage catapult use : 'E', for launch use : 'e'
 ___________________________________________________________________________________
 
