@@ -14,6 +14,12 @@ See details below
 
 ---
 
+___________________________________________________________________________________
+Updated 31/03/26
+
+- Walker added for both (Bourrasque and backset) with exit map near canopy scale and flightsuit outfit
+
+___________________________________________________________________________________
 Updated 30/03/26
 
 - Fixed spoilers command with throttles, you can continue to use 'j' and 'k' keys
